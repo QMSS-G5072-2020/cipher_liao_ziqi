@@ -1,25 +1,30 @@
-'''
-Caesar cipher is an encryption techniques.
-Each letter is replaced by a letter some fixed number of positions down the alphabet.
-
-Parameters
-----------
-text: text that people would like to encrypt
-shift: number of shifts that people would like to have when encrypting
-
-Returns
-----------
-new_text that has been encrypted with shifts from text
-
-
-Examples
-----------
- >>> from cipher_zl2988 import cipher_zl2988
- >>> cipher_zl2988.cipher('Practice',3)
-'Sudfwlfh'
-
-'''
 def cipher(text, shift, encrypt=True):
+    '''
+    Caesar cipher is an encryption techniques.
+    Each letter is replaced by a letter some fixed number of positions down the alphabet.
+
+    Parameters
+    ----------
+    text: str
+        A string of text that people would like to encrypt or decrypt
+    shift: int
+        A interger for shifts incidating the number of digits that people would like to encrypt or decrypt
+    encrypt: boolean
+        A boolean value indicating either True or False for encrypt or decrypt
+
+    Returns
+    ----------
+    new_text: str 
+        A string of text that has been encrypted or decrpted with shifts from text
+
+    Examples
+    ----------
+    >>> from cipher_liao_ziqi import cipher_liao_ziqi
+    >>> cipher_liao_ziqi.cipher('Practice',3)
+    'Sudfwlfh'
+
+    '''
+
     alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
     new_text = ''
     for c in text:
