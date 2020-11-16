@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cipher_liao_ziqi"
-version = "0.1.0"
+version = "0.1.1"
 description = "Python package practice."
 authors = ["Ziqi Liao <zl2988@columbia.edu>"]
 license = "MIT"
